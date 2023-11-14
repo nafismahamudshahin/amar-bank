@@ -8,16 +8,44 @@
     <title>Amar Bank</title>
 </head>
 <body>
-    <header class="mt-10">
-        <h1 class="text-center text-4xl font-bold text-orange-600">Amar Bank info:</h1>
+    <header class="my-10">
+        <h1 class="text-center text-4xl font-bold text-orange-600">Let's get Amar Bank</h1>
     </header>
     <main>
-        <section>
-            <div class="grid">
-                <h2>Deposit</h2>
-                <b>$<span id="deposit-belance">00</span></b>
+        <section class="w-3/5 mx-auto">
+            <div class="grid grid-cols-3 gap-7">
+              <div class="rounded-lg p-10 bg-green-600">
+                <h2 class="font-bold text-xl">Deposit</h2>
+                <b class="font-bold">$<span id="deposit-balance">00</span></b>
+              </div>
+
+              <div class="rounded-lg p-10 bg-orange-300">
+                <h2 class="font-bold text-xl">Withdrow</h2>
+                <b class="font-bold">$<span id="withdrow-balance">00</span></b>
+              </div>
+
+              <div class="rounded-lg p-10 bg-pink-600">
+                <h2 class="font-bold text-xl">Total Balance</h2>
+                <b class="font-bold">$<span id="total-balance">00</span></b>
+              </div>
             </div>
         </section>
+        <section class="w-3/5 mx-auto mt-10">
+            <div class="grid grid-cols-2 gap-7">
+                <div class="rounded-lg p-10 bg-green-600">
+                    <h2 class="font-bold text-xl">Pleace Deposit</h2>
+                    <input id="user-email" class="block mt-4  py-2 px-2 pr-36 rounded-lg" type="email" placeholder="Pleace Deposit:">
+                    <button id="deposit-btn" class=" bg-orange-700 font-bold px-5 py-2 mt-3 rounded-lg text-white">Deposit</button>
+                </div>
+                <div class="rounded-lg p-10 bg-orange-300">
+                    <h2 class="font-bold text-xl">Withdrow</h2>
+                    <input id="user-email" class="block mt-4 py-2 px-2 pr-36 rounded-lg" type="email" placeholder="Withdrow:">
+                    <button id="withdrow-btn" class=" bg-orange-700 font-bold px-5 py-2 mt-3 rounded-lg text-white">Withdrow</button>
+                </div>
+             
+            </div>
+        </section>
+
     </main>
 </body>
 </html>
