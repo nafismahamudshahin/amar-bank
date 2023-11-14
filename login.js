@@ -11,6 +11,8 @@ document.getElementById("sumbit-btn").addEventListener('click',function(){
     if(userEmail === email && userPassword === password){
         window.location.href='amarbank.html';
     }else{
-        console.log("invalid user");
+        alert("invalid user");
     }
+    userEmailElement.value='';
+    userPasswordElement.value='';
 })
