@@ -13,20 +13,20 @@
     </header>
     <main>
         <section class="w-3/5 mx-auto">
-            <div class="grid grid-cols-3 gap-7">
+            <div class="grid grid-cols-3 gap-7 text-white">
               <div class="rounded-lg p-10 bg-green-600">
                 <h2 class="font-bold text-xl">Deposit</h2>
                 <b class="font-bold">$<span id="deposit-balance">00</span></b>
               </div>
 
-              <div class="rounded-lg p-10 bg-orange-300">
+              <div class="rounded-lg p-10 bg-orange-400">
                 <h2 class="font-bold text-xl">Withdrow</h2>
                 <b class="font-bold">$<span id="withdrow-balance">00</span></b>
               </div>
 
               <div class="rounded-lg p-10 bg-pink-600">
                 <h2 class="font-bold text-xl">Total Balance</h2>
-                <b class="font-bold">$<span id="total-balance">00</span></b>
+                <b class="font-bold">$<span id="total-balance">1200</span></b>
               </div>
             </div>
         </section>
@@ -34,18 +34,20 @@
             <div class="grid grid-cols-2 gap-7">
                 <div class="rounded-lg p-10 bg-green-600">
                     <h2 class="font-bold text-xl">Pleace Deposit</h2>
-                    <input id="user-email" class="block mt-4  py-2 px-2 pr-36 rounded-lg" type="email" placeholder="Pleace Deposit:">
+                    <input id="deposit" class="block mt-4  py-2 px-2 pr-36 rounded-lg" type="email" placeholder="Pleace Deposit:">
                     <button id="deposit-btn" class=" bg-orange-700 font-bold px-5 py-2 mt-3 rounded-lg text-white">Deposit</button>
                 </div>
-                <div class="rounded-lg p-10 bg-orange-300">
+                <div class="rounded-lg p-10 bg-yellow-600">
                     <h2 class="font-bold text-xl">Withdrow</h2>
-                    <input id="user-email" class="block mt-4 py-2 px-2 pr-36 rounded-lg" type="email" placeholder="Withdrow:">
+                    <input id="withdrow" class="block mt-4 py-2 px-2 pr-36 rounded-lg" type="email" placeholder="Withdrow:">
                     <button id="withdrow-btn" class=" bg-orange-700 font-bold px-5 py-2 mt-3 rounded-lg text-white">Withdrow</button>
                 </div>
              
             </div>
         </section>
+        <p id="demo">ttt</p>
 
     </main>
+    <script src="deposit.js"></script>
 </body>
 </html>
