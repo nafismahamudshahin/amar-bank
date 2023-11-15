@@ -2,7 +2,7 @@ document.getElementById("deposit-btn").addEventListener('click',function(){
     const newDepositElement = document.getElementById("deposit");
     const newDeposit =parseFloat(newDepositElement.value);
     newDepositElement.value ='';
-    if(isNaN(newDeposit)){
+    if(isNaN(newDeposit) || newDeposit <= 0){
         alert("Enter valid input")
         return
     }

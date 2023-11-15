@@ -10,7 +10,7 @@ document.getElementById("withdrow-btn").addEventListener('click',function(){
     const balanceElements = document.getElementById("total-balance");
     const totalBalances = parseFloat(balanceElements.innerText);
     if(totalBalances < newWithdrow){
-        alert("You cannot withdraw more than this amount",totalBalances);
+        alert("You cannot withdraw more than this", totalBalances ," amount");
         return;
     }
 
